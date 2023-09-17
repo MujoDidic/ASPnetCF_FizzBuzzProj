@@ -3895,7 +3895,7 @@ textarea.form-control-lg {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #dc3545;
 }
 .nav-tabs .nav-link {
   margin-bottom: -1px;
@@ -3905,7 +3905,7 @@ textarea.form-control-lg {
   border-top-right-radius: 0.25rem;
 }
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: #e9ecef #e9ecef #dee2e6;
+  border-color: #e9ecef #e9ecef #0d6efd;
   isolation: isolate;
 }
 .nav-tabs .nav-link.disabled {

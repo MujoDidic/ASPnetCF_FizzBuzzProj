@@ -1,19 +1,20 @@
 ﻿@model ASPnetCF_FizzBuzz.Models.FizzBuzz
 
+
 <div class="container mt-4">
     <div class="row row-cols-1 row-cols-lg-2">
         <div class="col col-lg-4 border-2 border-end">
-            <h1 class="appName border-2 border-bottom">Fizz and Buzz</h1>
+            <h1 class="appName border-2 border-bottom">Fizz und Buzz</h1>
             <h4 class="lead">
-                With this app user can see in live action how works Website that uses C# as backend programming language.
+                Mit dieser App können Benutzer in Live-Action sehen, wie eine Website funktioniert, die C# als Backend-Programmiersprache verwendet.
             </h4>
-            <h2 class="mt-5 border-2 border-bottom">Instructions:</h2>
-            <p class="pColor">Enter a start and end value into desiganted field than press "Run" button</p>
+            <h2 class="mt-5 border-2 border-bottom">Anweisungen:</h2>
+            <p class="pColor">Geben Sie einen Start- und Endwert in das dafür vorgesehene Feld ein und klicken Sie dann auf die Schaltfläche „Ausführen“.</p>
         </div>
         <div class="col col-lg-8">
             <div class="row">
                 <div>
-                    <h5>Enter numbers</h5>
+                    <h5>Geben Sie Zahlen ein</h5>
                     @*Form goes here*@
                     <form asp-action="FBPage" asp-controller="Home" method="post" class="row gy-2 gx-3">
                         <div class="col">
@@ -27,12 +28,12 @@
                         </div>
 
                         <div class="col-12 d-flex align-items-center justify-content-start justify-content-lg-end">
-                            <button type="submit" class="btn btn-dark btn-lg">
-                                Run FizzBuzz
+                            <button type="submit" class=" btn btn-danger btn-lg">
+                                Ausführen
                             </button>
                         </div>
                     </form>
-                    <h2 class="mt-5 border-bottom border-2">Results</h2>
+                    <h2 class="mt-5 border-bottom border-2">Ergebnisse</h2>
                     <div class="table-responsive">
                         @*Table goes here*@
 
@@ -40,7 +41,7 @@
                         {
                             <table class="table-striped table table-dark">
                                 <thead>
-                                    <tr><th colspan="5">FizzBuzz Results</th></tr>
+                                    <tr><th colspan="5">FizzBuzz Ergebnisse</th></tr>
                                 </thead>
                                 @for (int i = 0; i < Model.Records.Count(); i+=5)
                                 {

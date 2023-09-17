@@ -3,16 +3,21 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - ASPnetCF_FizzBuzz</title>
+    <title>@ViewData["Title"] FizzBuzz</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ASPnetCF_FizzBuzz.styles.css" asp-append-version="true" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icon//apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon//favicon-16x16.png">
+    <link rel="manifest" href="img/icon/site.webmanifest">
+    <script src="https://kit.fontawesome.com/5db21ba9c6.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ASPnetCF_FizzBuzz</a>
+                <a class="navbar-brand" ><img src="/img/Color logo - no background.png" class="d-inline-block align-text-top" height="24"> FizzBuzz</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -39,11 +44,17 @@
         <main id="content" class="flex-shrink-0">
             @RenderBody()
         </main>
-    
-
-    <footer class="footer border-top text-muted">
-        <div class="container">
-            &copy; 2023 - ASPnetCF_FizzBuzz - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+   
+    <footer class="footer mt-auto py-3">
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-lg-3 gy-2">
+                <div class="col order-last order-lg-first text-light">
+                    <div><span class="text-muted">&copy;2023</span> Mujo Didic |<a href="https://mujodidic.com"> mujodidic.com</a></div>
+                </div>
+                <div class="col d-flex align-items-center justify-content-start justify-content-lg-center">
+                    <img src="/img/Color logo - no background.png" height="24">
+                </div>
+            </div>   
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
