@@ -1,0 +1,56 @@
+﻿@model ASPnetCF_FizzBuzz.Models.FizzBuzz
+
+<div class="container mt-4">
+    <div class="row row-cols-1 row-cols-lg-2">
+        <div class="col col-lg-4 border-2 border-end">
+            <h1 class="appName border-2 border-bottom">Fizz and Buzz</h1>
+            <h4 class="lead">
+                With this app user can see in live action how works Website that uses C# as backend programming language.
+            </h4>
+            <h2 class="mt-5 border-2 border-bottom">Instructions:</h2>
+            <p class="pColor">Enter a start and end value into desiganted field than press "Run" button</p>
+        </div>
+        <div class="col col-lg-8">
+            <div class="row">
+                <div>
+                    <h5>Enter numbers</h5>
+                    @*Form goes here*@
+                    <form asp-action="FBPage" asp-controller="Home" method="post" class="row gy-2 gx-3">
+                        <div class="col">
+                            <label asp-for="FizzNum">Fizz number</label>
+                            <input type="number" asp-for="FizzNum" class="form-control" value="@Model.FizzNum" placeholder="Enter number" />
+                        </div>
+
+                        <div class="col">
+                            <label asp-for="BuzzNum">Buzz number</label>
+                            <input type="number" asp-for="BuzzNum" class="form-control" value="@Model.BuzzNum" placeholder="Enter number" />
+                        </div>
+
+                        <div class="col-12 d-flex align-items-center justify-content-start justify-content-lg-end">
+                            <button type="submit" class="btn btn-dark btn-lg">
+                                Run FizzBuzz
+                            </button>
+                        </div>
+                    </form>
+                    <h2 class="mt-5 border-bottom border-2">Results</h2>
+                    <div class="table-responsive">
+                        @*Table goes here*@
+
+                        @if(@Model.Records.Count > 0)
+                        {
+                            <table class="table-striped table table-dark">
+                                <thead>
+                                    <tr><th colspan="5">FizzBuzz Results</th></tr>
+                                </thead>
+                                @for (int i = 0; i < Model.Records.Count(); i+=5)
+                                {
+                                    <tr><td>@Model.Records[i]</td><td>@Model.Records[i + 1]</td><td>@Model.Records[i + 2]</td><td>@Model.Records[i + 3]</td><td>@Model.Records[i + 4]</td></tr>
+                                }
+                            </table>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

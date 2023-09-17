@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container col-xxl-8 px-4 py-5">
+    <div class="row g-5 py-5 row-cols-1 row-cols-lg-2">
+        <div class="col order-last order-lg-first">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Fizz Buzz</h1>
+            <h4 class="lead">This Website runs scripts which prints numbers from 0 to 100, multiples of 3 as Fizz and numbers multiples of 5 as Buzz and numbers multiples of 3 and 5 as FizzBuzz.This site loops are written in C#.</h4>
+            <ul class="fa-ul pt checklist">
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>CSS and Bootstrap</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>C# Fundamentals</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>C# Loops</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>C# Methods</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>C# IF/THEN/ELSE</li>
+                <li><span class="fa-li"><i class="fas fa-check-square"></i></span>C# Boolean Logic</li>
+            </ul>
+            <div>
+                @*<a type="button" class="btn btn-outline-dark btn-lg px4 me-md-2" href="app.html">Try it out!!!</a>*@
+                <a class="btn btn-outline-dark btn-lg" asp-controller="Home" asp-action="FBPage">Try it out!!!</a>
+            </div>
+            <h5 class="fw-bold mt-5">
+                <div class="d-flex">
+                    <div class="row row-cols-4">
+                        <div class="col "><i class="fab fa-js-square fa-4x jsicon"></i></div>
+                        <div class="col"><i class="fab fa-bootstrap fa-4x bsicon"></i></div>
+                        <div class="col"><i class="fab fa-html5 fa-4x html5icon"></i></div>
+                        <div class="col"><i class="fab fa-css3-alt fa-4x css3icon"></i></div>
+                    </div>
+                </div>
+            </h5>
+        </div>
+        <div class="col">
+            <img src="~/img/FizzBuzz.png" class="img-fluid center-block d-block mx-auto" alt="Fizz Buzz Logo" width="900" height="700">
+        </div>
+    </div>
+</div>
+
